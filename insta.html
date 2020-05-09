@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Insta app icon</title>
+        <link rel="stylesheet" type="text/css" href="insta.css">
+        <script type="text/javascript" src="insta.js"></script>
+    </head>
+    <body>
+    <!--Instagram Icon -->
+      <div id='icon' onclick="alert('1) On the section, \'Add your own\', you can select and add your own type of colors. Just tap on \'Save Change\', after u r done with the work.\nSolid will color the icon as solid and texture will add texture to the icon\n\n2) Use color 1, if u have choosen design type to \'Solid\' or else u may use all 4 choices for coloration\n\n3) Enter degrees (compulsory), if u have choosen design type as \'Texture\'.\n\n4) Tap on \'Restore as Default\', which is at the most bottom of the page, if you want the real theme to get in the icon.\n\n5) Keep scrolling to find recommeded styles')">
+        <div id='otln'>
+            <div id='inln'>
+               <div id='dot'></div>
+               <div id='cam'></div>
+             </div>
+          </div>
+       <div style="text-align: center;color: white;padding:15px 0px 20px 0px;font-size: 20px;">Instagram</div>
+        </div>
+
+        <!--Settings-->
+          <div id='stng'>
+            <div style="margin:auto;font-family:'Lobster';text-align:center;padding:0px 0px 10px 0px;margin:0;border-style:solid;border-color:white;border-radius:20px;"> <!--section 1-->
+              <div style="text-align: center;font-size:50px;text-decoration-line: underline;padding:5px 0px 20px 0px;margin:0;">Add your own</div>
+              <div style="margin:auto;">
+                 <input type='search' list='gd' placeholder="Design Type" id='grd' onchange='pls()'/>
+                 <datalist id='gd'>
+                   <option value='Solid'>
+                   <option value='Textured'>
+                 </datalist>
+
+                <table style="margin:auto;padding:10px 0px 10px 0px;">
+                   <tr>
+                     <td id='cls'>Color 1</td>
+                     <td id='cls'>Color 2</td>
+                     <td id='cls'>Color 3</td>
+                     <td id='cls'>Color 4</td>
+                   </tr>
+                   <tr>
+                   <td id='cls'><input type='color' value='#FF0000' id='onc'/></td>
+                   <td id='cls'><input type='color' value='#00FF00' id='onc2'/></td>
+                   <td id='cls'><input type='color' value='#0000FF' id='onc3'/></td>
+                   <td id='cls'><input type='color' value='#FFFF00' id='onc4'/></td>
+                   </tr>
+                 </table>
+                 <input type="number" style="width:160px;" id='deg' placeholder="Enter degrees" min='-360' max='360'/>
+                 <div style="padding-top: 10px;"><button onclick="chng()" style="text-align: center;font-family:'Shadows Into Light';font-weight:bolder;border-color:purple;background-color:purple;color:white;border-radius:20px;font-size:17px;">Save Change</button></div>
+              </div>
+            </div>
+            <div style="padding-top:10px;"></div>
+            <hr>
+            <div style="text-align: center;padding:5px 0px 20px 0px;"> <!--section 2-->
+                  <div style="color: white;text-align: center;padding-bottom: 5px;text-decoration-line: underline;font-family:'Lobster';font-size:50px">Solid styles</div>
+                 <table style="margin: auto;">
+                    <tr>
+                      <td onclick="q1()" style="background-color: red;" class='trd'>Red</td>
+                      <td onclick="q2()" style="background-color: green;" class='trd'>Green</td>
+                      <td onclick="q3()" style="background-color:crimson" class='trd'>Crimson</td>
+                     </tr>
+                     <tr>
+                       <td onclick="q4()" style="background-color: deeppink;" class='trd'>Deep pink</td>
+                       <td onclick="q5()" style="background-color: orange;" class='trd'>Orange</td>
+                       <td onclick="q6()" style="background-color: blue;" class='trd'>Blue</td>
+                     </tr>
+                     <tr>
+                       <td onclick="q7()" style="background-color: rgb(255, 208, 0);" class='trd'>Yellow</td>
+                       <td onclick="q8()" style="background-color: purple;" class='trd'>Purple</td>
+                       <td onclick="q9()" style="background-color: violet;" class='trd'>Violet</td>
+                     </tr>
+                  </table>
+               </div>
+               <hr id="hrd">
+             <div style="text-align: center;padding:10px 0px 20px 0px;"> <!--section 3-->
+               <div style="color: white;text-align: center;padding-bottom: 5px;text-decoration-line: underline;font-family:'Lobster';font-size:50px">Textured colors</div>
+                   <table style="margin: auto;">
+                      <tr>
+                         <td onclick="p1()" style="background: linear-gradient(150deg,purple,deeppink,orange,yellow);" class='trd'>Insta default</td>
+                         <td onclick="p2()" style="background: linear-gradient(180deg,rgb(9, 165, 4),rgb(38, 95, 16),rgb(5, 77, 2),rgb(0, 65, 4));" class='trd'>Forest</td>
+                         <td onclick="p3()" style="background: linear-gradient(120deg,red,yellow,green,blue);" class='trd'>Rainbow</td>
+                      </tr>
+                      <tr>
+                        <td onclick="p4()" style="background: linear-gradient(260deg,rgb(255, 0, 119),rgb(255, 0, 34),rgb(140, 0, 255),rgb(45, 0, 128));" class='trd'>Flower</td>
+                        <td onclick="p5()" style="background: linear-gradient(300deg,rgb(255, 8, 0),rgb(206, 55, 9),orange,yellow);" class='trd'>Sun set</td>
+                        <td onclick="p6()" style="background: linear-gradient(170deg,deeppink,blue,red,yellow);" class='trd'>Mix</td>
+                      </tr>
+                      <tr>
+                        <td onclick="p7()" style="background: linear-gradient(330deg,rgb(253, 88, 190),rgb(233, 18, 161),rgb(153, 13, 123),rgb(112, 10, 90));" class='trd'>Violet charm</td>
+                        <td onclick="p8()" style="background: linear-gradient(60deg,blue,rgb(3, 3, 116),rgb(1, 1, 77),rgb(0, 0, 34));" class='trd'>Night fall</td>
+                        <td onclick="p9()" style="background: linear-gradient(230deg,rgb(0, 255, 242),rgb(1, 111, 145),rgb(0, 77, 128),rgb(0, 68, 255));" class='trd'>Sky</td>
+                      </tr>
+                  </table>
+             </div>
+           <hr id="hrd">
+            <div onclick="rest()" id="deff"> <!--Default-->
+                Restore to Default
+            </div>
+      </div>
+    </body>
+</html>

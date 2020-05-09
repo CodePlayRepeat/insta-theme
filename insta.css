@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand|Lobster|Baloo Thambi|Pacifico|Shadows Into Light|Permanent Marker');
+body{
+    background:black;
+    margin: 0;
+    overflow-x: hidden;
+}
+#onc,#onc2,#onc3,#onc4{
+    background-color:transparent;
+    animation-duration:2s;
+    width:50px;
+    height:40px;
+    animation-iteration-count:infinite;
+}
+#deff{
+    font-family:'Permanent Marker';
+    font-size:40px;
+    text-align:center;
+    border-style:dotted;
+    animation-name:sd;
+    animation-duration:2s;
+    animation-iteration-count:infinite;
+}
+@keyframes sd{
+    0%{
+        border-color:red;
+    }
+    10%{
+        border-color:orange;
+    }
+    30%{
+        border-color:yellow;
+    }
+    50%{
+        border-color:green;
+    }
+    70%{
+        border-color:blue;
+    }
+    80%{
+        border-color:indigo;
+    }
+    100%{
+        border-color:purple;
+    }
+}
+#stng{
+    color: white;
+    margin: auto;
+    overflow-x:hidden;
+}
+#icon{
+    padding: 20px 0px 0px 10px;
+    position: fixed;
+
+    border-bottom-color: white;
+    border-bottom-style: double;
+    font-family:'Quicksand';
+    background:linear-gradient(45deg,deeppink,blue);
+}
+#otln{
+    padding: 2px 2px 2px 2px;
+    background: linear-gradient(150deg,purple,deeppink,orange,yellow);
+    margin: auto;
+}
+#inln{
+    border-style: solid;
+    border-width: 5px;
+    background-color: transparent;
+    border-color: white;
+    width:70px;
+    height:67px;
+    margin:auto;
+}
+#dot{
+    background-color: white;
+    border-radius: 100em;
+    border-style: solid;
+    float: right;
+    border-color: white;
+}
+#cam{
+    border-style: solid;
+    border-width: 5px;
+    border-color: white;
+    background-color:transparent;
+    margin:auto;
+    margin-top: 12px;
+}
+#grd,#deg{
+    font-family:'Pacifico';
+    padding-left:5px;
+    border-radius:100em;
+}
+#grd:active{
+    box-shadow:0px 0px 50px deeppink;
+}
+#deg:active{
+    box-shadow:0px 0px 50px purple;
+}
+.trd{
+    border-radius: 20px;
+    border-style: solid;
+    border-color: white;
+    color:white;
+    text-align:center;
+    border-width: 1px;
+    width: 150px;
+    height: 150px;
+    font-family:'Baloo Thambi';
+}
