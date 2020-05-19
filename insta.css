@@ -8,6 +8,7 @@ body{
     background-color:transparent;
     animation-duration:2s;
     width:50px;
+    cursor: pointer;
     height:40px;
     animation-iteration-count:infinite;
 }
@@ -17,6 +18,7 @@ body{
     text-align:center;
     border-style:dotted;
     animation-name:sd;
+    cursor: pointer;
     animation-duration:2s;
     animation-iteration-count:infinite;
 }
@@ -103,6 +105,7 @@ body{
     border-color: white;
     color:white;
     text-align:center;
+    cursor: pointer;
     border-width: 1px;
     width: 150px;
     height: 150px;
